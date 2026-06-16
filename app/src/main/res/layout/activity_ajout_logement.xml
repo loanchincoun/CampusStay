@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AjoutLogement">
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="286dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="145dp"
+        android:text="Formulaire nouvelle annonce"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.145"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="339dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="570dp"
+        android:layout_marginBottom="40dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btnValiderAnnonce"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Valider l'annonce" />
+
+        <Button
+            android:id="@+id/btnAnnulerAnnonce"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Annuler" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="366dp"
+        android:layout_height="485dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nom complet"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/txtNomLogement"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:hint="Nom du Logement"
+            android:inputType="text"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description détaillée"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/txtDescription"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:ems="10"
+            android:hint="Description"
+            android:inputType="text"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Adresse"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/txtAdresse"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:hint="Adrese"
+            android:inputType="textPostalAddress"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Superficie"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/txtSuperficie"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:hint="Ex : 18"
+            android:inputType="number"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre de pieces"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/txtNbPieces"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:hint="Ex : 2"
+            android:inputType="number"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Parking ?"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="77dp">
+
+            <RadioButton
+                android:id="@+id/rbParkingOui"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Oui" />
+
+            <RadioButton
+                android:id="@+id/rbParkingNon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Non" />
+        </RadioGroup>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
